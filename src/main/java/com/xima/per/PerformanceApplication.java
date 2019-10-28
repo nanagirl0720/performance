@@ -8,7 +8,7 @@ public class PerformanceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(PerformanceApplication.class, args);
-        System.out.println("Start End.1..");
+        System.out.println("Start End...");
     }
 
 }
