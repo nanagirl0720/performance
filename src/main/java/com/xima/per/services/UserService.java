@@ -3,6 +3,8 @@ package com.xima.per.services;
 import com.xima.per.dao.UserDao;
 import com.xima.per.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +20,7 @@ public class UserService {
     @Autowired
     private UserDao userDao;
 
+    @CachePut
     public User save(User user){
         return  userDao.save(user);
     }
@@ -30,17 +33,17 @@ public class UserService {
        return userDao.findAll();
     }
 
-
-
     public User getOne(Integer id){
         return userDao.getOne(id);
     }
 
+    @Cacheable(cacheNames={"user"},keyGenerator = "wiselyKeyGenerator")
     public User findById(Integer id){
         Optional<User> byId = userDao.findById(id);
            User one = userDao.getOne(id);
             if (byId.isPresent()){
-                 return byId.get();
+                System.out.println("查询第"+id+"号员工");
+                return byId.get();
             } else {
                 return null;
             }

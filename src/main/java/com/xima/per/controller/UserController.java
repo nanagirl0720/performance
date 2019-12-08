@@ -30,11 +30,13 @@ public class UserController {
         userService.delete(user);
     }
 
+/*
     @ResponseBody
     @GetMapping("/{id}")
     public User getOne( @PathVariable("id") Integer id){
        return userService.getOne(id);
     }
+*/
 
     @GetMapping("/all")
     @ResponseBody
@@ -47,4 +49,35 @@ public class UserController {
     public  User findById(@PathVariable ("id") Integer id){
        return  userService.findById(id);
     }
+
+    @RequestMapping("/index")
+    public String index(){
+        return "index";
+    }
+
+    @RequestMapping("/login")
+    public String login(){
+        return "userlogin";
+    }
+
+    @RequestMapping("/top")
+    public String top(){
+        return "top";
+    }
+
+    @RequestMapping("/skip_left")
+    public String skip_left(){
+        return "skip_left";
+    }
+
+    @RequestMapping("/change")
+    public String change(){
+        return "change";
+    }
+
+    @RequestMapping("/bottom")
+    public String bottom(){
+        return "bottom";
+    }
+
 }
