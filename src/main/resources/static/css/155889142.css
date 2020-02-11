@@ -1,0 +1,761 @@
+
+
+.Btn {
+  width: 100%;
+}
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 51.75em) {
+  .wrapper {
+    background: #f3f3f3;
+  }
+}
+@media only screen and (min-width: 51.75em) and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-width: 51.75em) and (-o-min-device-pixel-ratio: 3/2), only screen and (min-width: 51.75em) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 51.75em) and (min-device-pixel-ratio: 1.5), only screen and (min-width: 51.75em) and (min-resolution: 1.5dppx) {
+  html:not(.ie8) .wrapper {
+    background: #f3f3f3;
+  }
+}
+.wrapper #container-boundingbox,
+.wrapper #container {
+  width: auto;
+  border: none;
+  margin: 0;
+  padding: 0px;
+  min-height: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 930px) {
+  .wrapper #container-boundingbox,
+  .wrapper #container {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 929px) {
+  .wrapper #container-boundingbox,
+  .wrapper #container {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 709px) {
+  .wrapper #container-boundingbox,
+  .wrapper #container {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .wrapper #container-boundingbox,
+  .wrapper #container {
+    width: auto;
+  }
+}
+@media all {
+  .wrapper #container-boundingbox,
+  .wrapper #container {
+    background: none;
+  }
+}
+@media all and (-moz-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (-webkit-min-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5), all and (min-resolution: 1.5dppx) {
+  html:not(.ie8) .wrapper #container-boundingbox,
+  html:not(.ie8) .wrapper #container {
+    background: none;
+  }
+}
+.wrapper #container-boundingbox .main,
+.wrapper #container .main {
+  width: auto;
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+@media only screen and (min-width: 930px) {
+  .wrapper #container-boundingbox .main,
+  .wrapper #container .main {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 929px) {
+  .wrapper #container-boundingbox .main,
+  .wrapper #container .main {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 709px) {
+  .wrapper #container-boundingbox .main,
+  .wrapper #container .main {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .wrapper #container-boundingbox .main,
+  .wrapper #container .main {
+    width: auto;
+  }
+}
+@media all {
+  .wrapper #container-boundingbox .main,
+  .wrapper #container .main {
+    background: none;
+  }
+}
+@media all and (-moz-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (-webkit-min-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5), all and (min-resolution: 1.5dppx) {
+  html:not(.ie8) .wrapper #container-boundingbox .main,
+  html:not(.ie8) .wrapper #container .main {
+    background: none;
+  }
+}
+.wrapper .shadow {
+  width: auto;
+  display: none;
+}
+@media only screen and (min-width: 930px) {
+  .wrapper .shadow {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 929px) {
+  .wrapper .shadow {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 709px) {
+  .wrapper .shadow {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .wrapper .shadow {
+    width: auto;
+  }
+}
+.heading {
+  font-family: caecilia, Times, serif;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  color: #aaaaaa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 68px 0 26px 0;
+}
+:lang(zh-cn) .heading {
+  font-family: caecilia, Hiragino Sans GB, STHeiti, Microsoft Yahei, helvetica, arial, serif;
+}
+:lang(ja) .heading {
+  font-family: caecilia, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", helvetica, arial, serif;
+}
+.ie8 .heading {
+  font-family: caecilia-300-normal, Times, serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.ie8 :lang(zh-cn) .heading {
+  font-family: caecilia-300-normal, Hiragino Sans GB, STHeiti, Microsoft Yahei, helvetica, arial, serif;
+}
+.ie8 :lang(ja) .heading {
+  font-family: caecilia-300-normal, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", helvetica, arial, serif;
+}
+@media only screen and (max-width: 709px) {
+  .heading {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 28px;
+    margin-top: 0;
+    padding-top: 32px;
+  }
+}
+.heading h1 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 6px;
+  color: #2dbe60;
+}
+@media only screen and (max-width: 709px) {
+  .heading h1 {
+    line-height: 32px;
+    font-size: 28px;
+  }
+}
+.heading h2 {
+  font-size: 16px;
+  font-style: italic;
+  color: #747474;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 709px) {
+  .heading h2 {
+    font-size: 14px;
+  }
+}
+.heading .branding {
+  height: 68px;
+  margin-bottom: 19px;
+}
+@media only screen and (min-width: 30em) {
+  .heading .branding {
+    background:  url("/redesign/global/img/elephant.png") no-repeat center top;
+    -webkit-background-size: 68px 68px;
+    -moz-background-size: 68px 68px;
+    -o-background-size: 68px 68px;
+    background-size: 68px 68px;
+  }
+}
+@media only screen and (min-width: 30em) and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-width: 30em) and (-o-min-device-pixel-ratio: 3/2), only screen and (min-width: 30em) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 30em) and (min-device-pixel-ratio: 1.5), only screen and (min-width: 30em) and (min-resolution: 1.5dppx) {
+  html:not(.ie8) .heading .branding {
+    background:  url("/redesign/global/img/elephant@2x.png") no-repeat center top;
+    -webkit-background-size: 68px 68px;
+    -moz-background-size: 68px 68px;
+    -o-background-size: 68px 68px;
+    background-size: 68px 68px;
+  }
+}
+@media only screen and (max-width: 709px) {
+  .heading .branding {
+    background:  url("/redesign/global/img/elephant.png") no-repeat center top;
+    -webkit-background-size: 38px 38px;
+    -moz-background-size: 38px 38px;
+    -o-background-size: 38px 38px;
+    background-size: 38px 38px;
+  }
+}
+@media only screen and (max-width: 709px) and (-moz-min-device-pixel-ratio: 1.5), only screen and (max-width: 709px) and (-o-min-device-pixel-ratio: 3/2), only screen and (max-width: 709px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 709px) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 709px) and (min-resolution: 1.5dppx) {
+  html:not(.ie8) .heading .branding {
+    background:  url("/redesign/global/img/elephant@2x.png") no-repeat center top;
+    -webkit-background-size: 38px 38px;
+    -moz-background-size: 38px 38px;
+    -o-background-size: 38px 38px;
+    background-size: 38px 38px;
+  }
+}
+@media only screen and (max-width: 709px) {
+  .heading .branding {
+    height: 38px;
+  }
+}
+.minimal-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px 0;
+}
+.minimal-body {
+  max-width: 384px;
+  margin: 0px auto 28px auto;
+  border: 1px solid #dedede;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-align: left;
+}
+@media all {
+  .minimal-body {
+    background: #ffffff;
+  }
+}
+@media all and (-moz-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (-webkit-min-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5), all and (min-resolution: 1.5dppx) {
+  html:not(.ie8) .minimal-body {
+    background: #ffffff;
+  }
+}
+@media only screen and (max-width: 51.6875em) {
+  .minimal-body {
+    border: none;
+  }
+  #context-switch {
+    padding: 21px 0;
+    height: auto;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+  }
+  .Btn {
+    padding: 5px 0;
+  }
+  .wrapper {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 51.6875em) and only screen and (max-width: 51.6875em) {
+  .wrapper {
+    background: #ffffff;
+  }
+}
+@media only screen and (max-width: 51.6875em) and only screen and (max-width: 51.6875em) and (-moz-min-device-pixel-ratio: 1.5), only screen and (max-width: 51.6875em) and (-o-min-device-pixel-ratio: 3/2), only screen and (max-width: 51.6875em) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 51.6875em) and (min-device-pixel-ratio: 1.5), only screen and (max-width: 51.6875em) and (min-resolution: 1.5dppx) {
+  html:not(.ie8) .wrapper {
+    background: #ffffff;
+  }
+}
+#context-switch {
+  background: none;
+  text-align: center;
+}
+#context-switch .switch {
+  margin-top: 6px;
+}
+#context-switch .switch a {
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  font-family: gotham, helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #2dbe60;
+  text-decoration: none;
+}
+:lang(zh-cn) #context-switch .switch a {
+  font-family: gotham, Hiragino Sans GB, STHeiti, Microsoft Yahei, helvetica, arial, sans-serif;
+}
+:lang(ja) #context-switch .switch a {
+  font-family: gotham, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", helvetica, arial, sans-serif;
+}
+.ie8 #context-switch .switch a {
+  font-family: gotham-400-normal, helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.ie8 :lang(zh-cn) #context-switch .switch a {
+  font-family: gotham-400-normal, Hiragino Sans GB, STHeiti, Microsoft Yahei, helvetica, arial, sans-serif;
+}
+.ie8 :lang(ja) #context-switch .switch a {
+  font-family: gotham-400-normal, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", helvetica, arial, sans-serif;
+}
+#context-switch .switch a:hover {
+  color: #28a956;
+}
+#context-switch .switch a:active {
+  color: #23954b;
+}
+.t-milli {
+  color: #555555;
+}
+@media all {
+  body {
+    background: none;
+  }
+}
+@media all and (-moz-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (-webkit-min-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5), all and (min-resolution: 1.5dppx) {
+  html:not(.ie8) body {
+    background: none;
+  }
+}
+.web-redirect-banner {
+  position: relative;
+  display: none;
+  background-color: #00a82d;
+  color: #fff;
+  padding: 16.5px 40px;
+  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 709px) {
+  .web-redirect-banner {
+    display: none !important;
+  }
+}
+.web-redirect-banner p {
+  font-size: 13px;
+  color: #fff;
+  margin-top: 0;
+  min-width: 680px;
+}
+.web-redirect-banner button {
+  border: none;
+  border-radius: 2px;
+  color: #00a82d;
+  background-color: #fff;
+  min-width: 210px;
+  height: 30px;
+  font-size: 14px;
+}
+.web-redirect-banner .close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.web-redirect-banner .close-button:after,
+.web-redirect-banner .close-button:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  content: '';
+  width: 1px;
+  height: 20px;
+  background: #ccc;
+}
+.web-redirect-banner .close-button:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.web-redirect-banner .close-button:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+
+
+
+.CanBePulledDown {
+  position: relative;
+  max-height: 0px;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transition-property: opacity, max-height;
+  transition-delay: 0s;
+  opacity: 0;
+}
+.CanBePulledDown.PulledIntoView {
+  transition-delay: 1.1s;
+  max-height: 100px;
+  opacity: 1;
+}
+.CanBePulledDown.PulledIntoViewWithoutDelay {
+  max-height: 100px;
+  opacity: 1;
+}
+.CanBePulledDown .PullableText {
+  margin-bottom: 7px;
+  margin-top: 5px;
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+  position: relative;
+  color: #747474;
+  font-size: 14px;
+  font-family: gotham, helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+:lang(zh-cn) .CanBePulledDown .PullableText {
+  font-family: gotham, Hiragino Sans GB, STHeiti, Microsoft Yahei, helvetica, arial, sans-serif;
+}
+:lang(ja) .CanBePulledDown .PullableText {
+  font-family: gotham, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", helvetica, arial, sans-serif;
+}
+.ie8 .CanBePulledDown .PullableText {
+  font-family: gotham-400-normal, helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.ie8 :lang(zh-cn) .CanBePulledDown .PullableText {
+  font-family: gotham-400-normal, Hiragino Sans GB, STHeiti, Microsoft Yahei, helvetica, arial, sans-serif;
+}
+.ie8 :lang(ja) .CanBePulledDown .PullableText {
+  font-family: gotham-400-normal, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", helvetica, arial, sans-serif;
+}
+.minimal-form {
+  margin: 32px;
+  margin-bottom: 24px;
+}
+.tos {
+  margin-bottom: 16px;
+}
+.forgot-password {
+  display: inline-block;
+  margin-top: 14px;
+}
+#rememberMe {
+  color: #8f8f8f;
+}
+.arrow {
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+  top: 1px;
+}
+.switch-service {
+  margin-top: 10px;
+  position: relative;
+  height: 14px;
+}
+.switch-service-message {
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  left: 18px;
+}
+#password-wrapper {
+  margin-bottom: 10px;
+}
+#email-wrapper,
+#password-wrapper {
+  position: relative;
+}
+#email-wrapper input,
+#password-wrapper input {
+  border-radius: 7px;
+}
+#email-wrapper .passMsg,
+#password-wrapper .passMsg {
+  margin-top: 6px;
+}
+#email-wrapper i.inline,
+#password-wrapper i.inline {
+  display: none;
+  height: 100%;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 16px;
+}
+@media all {
+  #email-wrapper i.inline,
+  #password-wrapper i.inline {
+    background:  url("/redesign/modules/MinimalLoginForm/error-icon.png") 0 50% no-repeat;
+    -webkit-background-size: 16px 16px;
+    -moz-background-size: 16px 16px;
+    -o-background-size: 16px 16px;
+    background-size: 16px 16px;
+  }
+}
+@media all and (-moz-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (-webkit-min-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5), all and (min-resolution: 1.5dppx) {
+  html:not(.ie8) #email-wrapper i.inline,
+  html:not(.ie8) #password-wrapper i.inline {
+    background:  url("/redesign/modules/MinimalLoginForm/error-icon@2x.png") 0 50% no-repeat;
+    -webkit-background-size: 16px 16px;
+    -moz-background-size: 16px 16px;
+    -o-background-size: 16px 16px;
+    background-size: 16px 16px;
+  }
+}
+#email-wrapper input.error + i.inline,
+#password-wrapper input.error + i.inline {
+  display: block;
+}
+#email-wrapper u.inline,
+#password-wrapper u.inline {
+  height: 7px;
+  display: none;
+  position: absolute;
+  right: 11px;
+  top: -1px;
+  width: 14px;
+}
+@media all {
+  #email-wrapper u.inline,
+  #password-wrapper u.inline {
+    background:  url("/redesign/modules/MinimalLoginForm/error-arrow.png") no-repeat;
+    -webkit-background-size: 14px 7px;
+    -moz-background-size: 14px 7px;
+    -o-background-size: 14px 7px;
+    background-size: 14px 7px;
+  }
+}
+@media all and (-moz-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (-webkit-min-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5), all and (min-resolution: 1.5dppx) {
+  html:not(.ie8) #email-wrapper u.inline,
+  html:not(.ie8) #password-wrapper u.inline {
+    background:  url("/redesign/modules/MinimalLoginForm/error-arrow@2x.png") no-repeat;
+    -webkit-background-size: 14px 7px;
+    -moz-background-size: 14px 7px;
+    -o-background-size: 14px 7px;
+    background-size: 14px 7px;
+  }
+}
+#email-wrapper.visible-error u.inline,
+#password-wrapper.visible-error u.inline {
+  display: block;
+}
+#email-wrapper.visible-error .email-errors.inline,
+#password-wrapper.visible-error .email-errors.inline,
+#email-wrapper.visible-error .username-errors.inline,
+#password-wrapper.visible-error .username-errors.inline,
+#email-wrapper.visible-error .password-errors.inline,
+#password-wrapper.visible-error .password-errors.inline {
+  display: block;
+}
+.email-errors.inline,
+.username-errors.inline,
+.password-errors.inline {
+  background-color: #ed4c5b;
+  border: 1px solid white;
+  border-radius: 3px;
+  bottom: 100%;
+  box-sizing: border-box;
+  color: white !important;
+  display: none;
+  font-family: gotham, helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  max-width: 100%;
+  padding: 3px 5px;
+  position: absolute;
+  right: 0;
+}
+:lang(zh-cn) .email-errors.inline,
+:lang(zh-cn) .username-errors.inline,
+:lang(zh-cn) .password-errors.inline {
+  font-family: gotham, Hiragino Sans GB, STHeiti, Microsoft Yahei, helvetica, arial, sans-serif;
+}
+:lang(ja) .email-errors.inline,
+:lang(ja) .username-errors.inline,
+:lang(ja) .password-errors.inline {
+  font-family: gotham, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", helvetica, arial, sans-serif;
+}
+.ie8 .email-errors.inline,
+.ie8 .username-errors.inline,
+.ie8 .password-errors.inline {
+  font-family: gotham-500-normal, helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.ie8 :lang(zh-cn) .email-errors.inline,
+.ie8 :lang(zh-cn) .username-errors.inline,
+.ie8 :lang(zh-cn) .password-errors.inline {
+  font-family: gotham-500-normal, Hiragino Sans GB, STHeiti, Microsoft Yahei, helvetica, arial, sans-serif;
+}
+.ie8 :lang(ja) .email-errors.inline,
+.ie8 :lang(ja) .username-errors.inline,
+.ie8 :lang(ja) .password-errors.inline {
+  font-family: gotham-500-normal, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", helvetica, arial, sans-serif;
+}
+.email-errors.inline .FieldState-message,
+.username-errors.inline .FieldState-message,
+.password-errors.inline .FieldState-message,
+.email-errors.inline .FieldState_error-message,
+.username-errors.inline .FieldState_error-message,
+.password-errors.inline .FieldState_error-message {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+.Row {
+  margin-bottom: 1em;
+}
+.Row.horizontalRow {
+  position: relative;
+  max-width: 320px;
+  margin-bottom: 30px;
+  margin-top: 43px;
+}
+.Row.horizontalRow .horizontalText {
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+  color: #ababab;
+  font-size: 14px;
+  font-family: gotham, helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  z-index: 1;
+  overflow: hidden;
+}
+:lang(zh-cn) .Row.horizontalRow .horizontalText {
+  font-family: gotham, Hiragino Sans GB, STHeiti, Microsoft Yahei, helvetica, arial, sans-serif;
+}
+:lang(ja) .Row.horizontalRow .horizontalText {
+  font-family: gotham, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", helvetica, arial, sans-serif;
+}
+.ie8 .Row.horizontalRow .horizontalText {
+  font-family: gotham-400-normal, helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.ie8 :lang(zh-cn) .Row.horizontalRow .horizontalText {
+  font-family: gotham-400-normal, Hiragino Sans GB, STHeiti, Microsoft Yahei, helvetica, arial, sans-serif;
+}
+.ie8 :lang(ja) .Row.horizontalRow .horizontalText {
+  font-family: gotham-400-normal, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", helvetica, arial, sans-serif;
+}
+.Row.horizontalRow .horizontalText:before,
+.Row.horizontalRow .horizontalText:after {
+  width: 50%;
+  top: 51%;
+  overflow: hidden;
+  height: 1px;
+  background-color: #d0d0d0;
+  content: '\a0';
+  position: absolute;
+}
+.Row.horizontalRow .horizontalText:before {
+  margin-left: -52%;
+  text-align: right;
+}
+.Row.horizontalRow .horizontalText:after {
+  margin-left: 2%;
+}
+.Btn {
+  background-color: #2dbe60;
+  border-radius: 7px;
+}
+.wechat_login {
+  display: none;
+}
+.Btn_Yx {
+  background-color: #ffffff !important;
+  border: solid 1px #CACACA !important;
+  color: #848A8B !important;
+  font-size: 12px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Btn_Yx:hover {
+  background-color: #F8F8F8  !important;
+}
+.Btn_Yx img {
+  width: 20px;
+  margin-right: 10px;
+}
+.heading h1 {
+  color: #6a6a6a;
+}
+.forgotPasswordContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+.forgotPasswordContainer a,
+.forgotPasswordContainer a.visited {
+  color: #2dbe60;
+}
+#extraContentDiv div {
+  border-top: 1px solid #ababab;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 35px auto;
+  text-align: center;
+}
+.separator .line {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  height: 1px;
+  background: #d0d0d0;
+}
+.separator .text {
+  -ms-flex-preferred-size: 40px;
+  flex-basis: 40px;
+  font-size: 14px;
+  color: #949c9d;
+}
+
+

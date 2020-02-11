@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://app.yinxiang.com/Login.action -->
+<html  lang="en" xmlns:th="http://www.thymeleaf.org"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="en:locale" content="zh_CN_evernoteChina">
+
+
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="Shortcut Icon" href="https://app.yinxiang.com/favicon.ico" type="image/x-icon">
+
+    <title>欢迎回来</title>
+
+    <!-- Google Analytics -->
+    <script async="" src="/js/analytics.js"></script><script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        window.ga('create', 'UA-117332876-4',
+            'auto', {});
+        window.ga('require', 'displayfeatures');
+
+
+        /* <![CDATA[ */
+
+        window.ga('set', 'dimension7', '61ece0c0-26f0-4e1a-8e8c-00645fad7607');
+
+        window.ga('set', 'location', 'https://app.yinxiang.com/Login.action');
+
+        /* ]]> */
+    </script>
+    <!-- End Google Analytics -->
+    <script type="text/javascript">
+        window.ga('send', 'pageview', '/Login.action');
+    </script>
+    <!--[if lt IE 9]>
+    <script src="/redesign/global/js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/css/2037411414.css">
+    <link rel="stylesheet" href="/css/155889142.css">
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="EMUtils" src="/js/utils.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="/js/domReady.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="StripesFieldModifier" src="/js/StripesFieldModifier.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ga-util" src="/js/ga-util.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="evaluateEmailFirstLogin" src="/js/evaluate-email-first-login.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="header" src="/js/header.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="growsumo" src="/js/growsumo.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="i18n" src="/js/i18n2.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="classnames" src="/js/classnames.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="templates" src="/js/icanhaz.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="/js/text.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lodash" src="/js/lodash.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="webI18nResources" src="/js/webI18nResources.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="plurr" src="/js/plurr.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="json2" src="/js/json2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="keyCode" src="/js/keyCode.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="resolve" src="/js/requirejs-promise.js"></script>
+
+</head>
+
+<body class="wrapper"><div class="bar-header">
+    <div class="logo-bar"></div>
+</div>
+<div id="container-boundingbox" class="wrapper">
+    <div id="container" class="wrapper">
+        <div class="main">
+            <div class="web-redirect-banner">
+                <div>
+                    <p>Evernote 已基于你的访问地信息，将你自动跳转至印象笔记网页。收藏此网页、下载印象笔记APP体验更多“印象笔记帐户”专属新功能。Markdown，思维导图，新版外链分享，任务清单，OCR，素材库等更多新功能等你体验。</p>
+                    <p>You have been redirected from Evernote.com to Yinxiang.com based on your location.</p>
+                </div>
+                <!-- <button class="gotoen">Back to Evernote.com</button> -->
+                <div class="close-button"></div>
+            </div>
+            <div class="MinimalFormFrame"><div class="heading">
+                <div class="branding"></div>
+                <img src="/img/weixin.jpg" style="height: 80px;width:80px">
+                <h1>登录</h1>
+            </div>
+                <div class="minimal-wrapper">
+                    <div class="minimal-body">
+                        <div class="MinimalLoginForm"><div class="signin">
+                            <form method="post" autocomplete="on" name="login_form" th:action="@{/login/post}"  th:href="@{/user/index}"  id="login_form" class="minimal-form">
+                                <div class="success-notification-light"></div>
+                                <ol>
+                                    <li class="Row">
+                                        <div id="email-wrapper">
+                                            <input maxlength="255" name="username" id="username" placeholder="手机号、邮箱或用户名" type="text" class="TextInput TextInput_large"><script type="text/javascript">setTimeout(function(){try{var z=document.getElementById('username');z.focus();z.select();}catch(e){}},1);</script></div>
+                                    </li>
+                                    <li class="Row CanBePulledDown PulledIntoViewWithoutDelay" id="passwordRow" tabindex="-1">
+                                        <div id="password-wrapper">
+                                            <input type="password" class="TextInput TextInput_large" id="password" name="password" placeholder="密码" maxlength="64">
+                                        </div>
+                                    </li>
+                                    <li class="Row CanBePulledDown" id="responseMessageRow" tabindex="-1">
+                                        <div id="responseMessage" class="PullableText"></div>
+                                    </li>
+                                    <li class="checkbox-container SwitchInput Row CanBePulledDown PulledIntoView" id="rememberMeRow" tabindex="-1">
+                                        <input name="rememberMe" id="rememberMe" type="checkbox" class="checkbox" value="true"><label for="rememberMe">30 天内记住我</label>
+                                    </li>
+                                    <li class="Row CanBePulledDown PulledIntoView" id="submitRow" tabindex="-1">
+                                        <input type="hidden" name="login" id="eventToTrigger">
+                                        <input name="login" id="loginButton" type="submit" class="Btn Btn_emph Btn_super" value="登录"></li>
+                                </ol>
+                                <input type="hidden" id="hpts" name="hpts" value="1575375484618">
+                                <input type="hidden" id="hptsh" name="hptsh" value="Fc7Lu7RsucGviJDJrdv/eHVCkHI=">
+                                <div class="forgotPasswordContainer CanBePulledDown PulledIntoViewWithoutDelay" id="forgotPasswordDiv" tabindex="-1">
+                                    <a href="https://app.yinxiang.com/ForgotPassword.action" target="_top" class="forgot-password">
+                                        忘记密码？</a>
+                                </div>
+                                <div class="switch-service">
+                                    <a href="https://www.evernote.com/Login.action">
+                                        <div class="arrow">
+                                            <img src="/img/link-arrow.jpg">
+                                        </div>
+                                        <div class="switch-service-message">
+                                            切换到Evernote International</div>
+                                    </a>
+                                </div>
+                                <div id="extraContentDiv" class="Row CanBePulledDown">
+                                    <div class="Row">
+                                    </div>
+                                </div>
+                                <div class="wechat_login" style="display: block;">
+                                    <div class="separator">
+                                        <div class="line"></div>
+                                        <p class="text">或</p>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="Btn Btn_emph Btn_super Btn_Yx">
+                                        <img src="/img/wechat_icon@2x.e20b7172.png">
+                                        <span>使用微信登录</span>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="analyticsLoginOrigin" value="login_action"><input type="hidden" name="clipperFlow" value="false">
+                                <input type="hidden" name="showSwitchService" value="true">
+                                <input type="hidden" name="usernameImmutable" value="false"><div style="display: none;">
+                                <input type="hidden" name="_sourcePage" value="tekry3p1_6_iMUD9T65RG_YvRLZ-1eYO3fqfqRu0fynRL_1nukNa4gH1t86pc1SP">
+                                <input type="hidden" name="__fp" value="bJhS6bSvpDM3yWPvuidLz-TPR6I9Jhx8"></div></form></div>
+                        </div></div>
+                </div>
+                <div id="context-switch">
+                    <div class="t-pico">
+                        没有帐号？</div>
+                    <div class="switch">
+                        <form method="post" action="https://app.yinxiang.com/Registration.action" id="switch-form"><a id="switch-link">创建帐户</a>
+                            <input type="hidden" name="analyticsLoginOrigin" value="login_action"><input type="hidden" name="clipperFlow" value="false">
+                            <input type="hidden" name="showSwitchService" value="true"><input type="hidden" name="usernameImmutable" value="false">
+                            <div style="display: none;"><input type="hidden" name="_sourcePage" value="z6mQKpTGSiniMUD9T65RG_YvRLZ-1eYO3fqfqRu0fynRL_1nukNa4gH1t86pc1SP">
+                                <input type="hidden" name="__fp" value="33pe2F27lMA="></div></form></div>
+                </div>
+            </div><script type="text/javascript">
+            var handler = function() {
+                document.getElementById("hpts").value = "1575375484618";
+                document.getElementById("hptsh").value = "Fc7Lu7RsucGviJDJrdv/eHVCkHI=";
+            };
+            var form = document.getElementById("login_form");
+            if (form.addEventListener) {
+                form.addEventListener("submit", handler, false);
+            } else if (form.attachEvent) {
+                form.attachEvent("onsubmit", handler);
+            }
+        </script>
+        </div>
+
+        <div class="footer wrapper">
+            <a href="https://www.yinxiang.com/tos/" class="footer-entry" target="_blank">服务条款</a>
+            <a href="https://www.yinxiang.com/privacy/" class="footer-entry" target="_blank">隐私政策</a>
+            <span class="footer-entry last">
+    版权所有 2007 - 2019 开心笔记。保留所有权利。</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/js/-908676147.js"></script>
+<script type="text/javascript">
+    window.__EVERNOTE_ACTIONBEAN__ = {
+        "oauthState":null,"usePasswordAuth":false,
+        "evaluationMessage":null,
+        "analyticsLoginOrigin":"login_action",
+        "showTerms":false,
+        "oauthRedirect":"https://app.yinxiang.com/Login.action?oauthLogin",
+        "showForgotPasswordLink":true,
+        "showRememberMe":true,
+        "oauthClientId":"447407681759.apps.googleusercontent.com",
+        "openIdScopesGoogle":"openid email profile","userIdentityIds":[],
+        "thirdPartyLoginEnabled":true,
+        "gnomeRedesignEnabled":false,
+        "gnomeFreeTrialEnabled":true,
+        "wechatLoginPath":"https://static.app.yinxiang.com/embedded-web/web/wechat-login",
+        "evernoteServiceBaseUrl":"https://www.evernote.com",
+        "userShardId":null,
+        "businessShardId":null,
+        "slotSuffix":"","slotPrefix":"",
+        "currentUserId":null,"userPrivilege":null,"userServiceLevel":null,
+        "websocketUrl":"wss://ws.app.yinxiang.com/shard/null/id",
+        "headerJson":{},
+        "endpoints":{
+            "noteStoreUrl":null,"userStoreUrl":null,"utilityUrl":null,
+            "messageStoreUrl":null,"businessServiceUrl":null,"noteStoreUrlForBusiness":null,
+            "noteStoreUrlForBusinessAdmin":null,"userStoreUrlForBusiness":null,
+            "utilityUrlForBusiness":null
+        },
+        "thriftEndpointBuilderConfig":{
+            "shardUrlPrefix":"https://app.yinxiang.com/shard/",
+            "messageStoreUrlSuffix":"/messagestore",
+            "noteStoreUrlSuffix":"/notestore",
+            "userStoreUrlSuffix":"/edam/user",
+            "businessServiceUrlSuffix":"/edam/business",
+            "communicationEngineUrlSuffix":"/communicationengine",
+            "utilityStoreUrlSuffix":"/utility"
+        },
+        "cdnUIHostPath":"https://static.app.yinxiang.com",
+        "newTierSubscriptionRedirectUrl":"https://static.app.yinxiang.com/pay/subscriptions",
+        "newTierSubscriptionManageRedirectUrl":"https://static.app.yinxiang.com/pay/subscriptions/manage",
+        "oauthError":null
+    };
+</script>
+<script type="text/javascript">require(['es6'], function() {});</script>
+<script type="text/javascript">
+    define(
+        "actionBean", [], function() {return window.__EVERNOTE_ACTIONBEAN__;});
+</script>
+<script type="text/javascript" src="/js/i18nMessages_zh_CN_evernoteChina.js"></script>
+<script type="text/javascript" src="/js/154419295.js"></script><!--[if !IE]><!-->
+<script>if (/*@cc_on!@*/false) document.documentElement.className += ' ie10';</script><!--<![endif]-->
+</body>
+</html>
