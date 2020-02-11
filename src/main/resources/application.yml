@@ -2,23 +2,33 @@
 server:
   port: 8886
 
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # tomcat最大线程数，默认为200
+    max-threads: 800
+    # Tomcat启动初始化的线程数，默认值25
+    min-spare-threads: 30
+
 spring:
   ##数据库
   datasource:
-    url: jdbc:mysql://localhost:3306/pg_performancesy?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/performance?serverTimezone=UTC
     username: root
-    password: root
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
   ##安全机制
-  security:
-    user:
-      name: admin
-      password: 123
+#  security:
+#    basic:
+#      enable: false
+#    user:
+#      name: admin
+#      password: 123
   ##thymeleaf
   thymeleaf:
     cache: false
     enabled: true
-    prefix: classpath:templates/
+    prefix: classpath:/templates/
     suffix: .html
     mode: HTML5
     encoding: UTF-8
@@ -28,4 +38,14 @@ spring:
   devtools:
     restart:
       enabled: true
+
+  ##Jpa配置
+  data:
+    jpa:
+      repositories:
+        enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
