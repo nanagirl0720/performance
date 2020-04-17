@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8"/>
     <title>selectUser</title>
+
+    <link rel="stylesheet" href="/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -12,14 +15,33 @@
         <th>用户名</th>
         <th>密码</th>
         <th>创建日期</th>
+        <th>姓别</th>
+        <th>操作</th>
     </tr>
     <tr th:each="user:${userArrayList}">
         <td th:text="${user.username}"></td>
         <td th:text="${user.password}"></td>
-        <td th:text="${user.date}"></td>
+        <td th:text="${#dates.format(user.date,'yyyy-MM-dd')}"></td>
+        <td th:text="${user.gender}"></td>
+        <td><a th:href="@{/user/tr/(user.id)}">编辑</a>
+            <a th:href="@{/user/delete}">删除</a></td>
     </tr>
     </thead>
-
+    <a class="btn btn-primary" th:href="@{/user/save}"><span>新增</span></a>
 </table>
+
+<!-- Example single danger button -->
+<div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
 </body>
 </html>

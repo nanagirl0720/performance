@@ -26,6 +26,12 @@ public class User implements Serializable {
     @Column(name="date")
     private Date date;
 
+    @Column(name = "gender")
+    private String gender;
+
+    public User() {
+    }
+
     public Integer getId() {
         return id;
     }
@@ -64,7 +70,16 @@ public class User implements Serializable {
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", date=" + date +
+                ", date=" + date +'\'' +
+                ", gender=" + gender +
                 '}';
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }

@@ -8,11 +8,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
-/**
- * @author: Pxn
- * @date: 2019/11/3 16:16
- */
+
 @Controller
 @RequestMapping("/user")
 public class UserController {
@@ -31,12 +29,15 @@ public class UserController {
         userService.delete(user);
     }
 
+    @DeleteMapping("/deleteById")
+    public void deleteById(Integer id){
+        userService.deleteById(id);
+    }
     @ResponseBody
     @GetMapping("/{id}")
     public User getOne( @PathVariable("id") Integer id){
        return userService.getOne(id);
     }
-
     @GetMapping("/all")
     @ResponseBody
     public List<User> findAll(){
@@ -53,5 +54,12 @@ public class UserController {
     public String index(Model model){
         model.addAttribute("name","beauty");
         return "test";
+    }
+
+    @RequestMapping("/selectuser")
+    public String selectuser(Map map){
+        List<User> userList = userService.findAll();
+        map.put("userArrayList",userList);
+        return "selectuser";
     }
 }
