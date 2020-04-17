@@ -28,6 +28,10 @@ public class Result {
                 '}';
     }
 
+    public Result(int code) {
+        this.code = code;
+    }
+
     public Integer getId() {
         return id;
     }
