@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.HtmlUtils;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Objects;
 
@@ -16,7 +17,6 @@ import java.util.Objects;
  * @date: 2019/12/3 20:36
  */
 @Controller
-@RequestMapping(value = "/")
 public class LoginController {
 
     @Autowired
@@ -25,7 +25,7 @@ public class LoginController {
     @CrossOrigin
     @PostMapping(value = "api/login")
     @ResponseBody
-    public Result login(@RequestBody User requestUser) {
+    public Result login(@RequestBody User requestUser, HttpSession session) {
         // 对 html 标签进行转义，防止 XSS 攻击
         String username = requestUser.getUsername();
         username = HtmlUtils.htmlEscape(username);
@@ -35,7 +35,7 @@ public class LoginController {
             if (!Objects.equals(user.getUsername(), username) || !Objects.equals(user.getPassword(), requestUser.getPassword())) {
                 result=new Result(400);
             } else {
-                System.out.println(111);
+                session.setAttribute("user",user);
                 result=new Result(200);
                 break;
             }
