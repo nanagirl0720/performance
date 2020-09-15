@@ -38,6 +38,7 @@ public class UserController {
     public User getOne( @PathVariable("id") Integer id){
        return userService.getOne(id);
     }
+    @CrossOrigin
     @GetMapping("/all")
     @ResponseBody
     public List<User> findAll(){
